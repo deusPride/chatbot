@@ -1,28 +1,39 @@
 <template>
- 
-  <ChatContainer title="Conversationnal ChatBot"/>
+  <ChatContainer />
 </template>
 
 <script>
-import ChatContainer from './components/Chat-container.vue';
+import ChatContainer from "./components/Chat-container.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    ChatContainer
-}
-}
+    ChatContainer,
+  },
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {},
+};
 </script>
 
 <style>
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 #app {
-  
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Hvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 10px;
- 
+  position: fixed;
+  width: 350px;
+  bottom: 10px;
+  right: 10px;
 }
 </style>
