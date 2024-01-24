@@ -36,25 +36,23 @@ export default {
 
 .message.bot {
   background-color: beige;
-  right: 41%;
 }
 
 .message.user {
   position: relative;
   background-color: rgb(53, 219, 95);
-  right: -45%;
   border-radius: 10px 10px 0 10px;
+  max-width: 80%; /* Définir la largeur maximale, ajustez selon vos besoins */
+  margin-left: auto; /* Aligner à droite en mettant une marge à gauche automatique */
+  padding: 10px;
 }
 
 p,
 h5 {
   margin: 2px;
 }
-.message-container{
-    display: flex;
-    flex-direction: row;
-}
-.message-container.message.user {
-  
+.message-container {
+  display: flex;
+  flex-direction: row;
 }
 </style>

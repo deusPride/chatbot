@@ -9,13 +9,15 @@
       <h3>{{ title }}</h3>
       <div class="close" @click="toggleVisibility">X</div>
     </div>
+    <div class="chat-container">
+      <ChatMessage
+        v-for="message in messages"
+        :key="message.id"
+        :content="message.content"
+        :sender="message.sender"
+      />
+    </div>
 
-    <ChatMessage
-      v-for="message in messages"
-      :key="message.id"
-      :content="message.content"
-      :sender="message.sender"
-    />
     <form v-on:submit.prevent="addMessage">
       <input type="text" v-model="content" value="" /><input
         type="submit"
@@ -70,6 +72,9 @@ export default {
 * {
   transition: 0.5s all;
 }
+.chat-container {
+  overflow-y: scroll;
+}
 .Chat {
   height: 500px;
   width: 100%;
@@ -86,7 +91,6 @@ export default {
   color: beige;
   padding: 0 3%;
   box-shadow: 2px 2px 2px rgba(138, 158, 141, 0.699);
-  border-bottom: 1px solid #41638367;
   justify-content: space-between;
   align-items: center;
 }
