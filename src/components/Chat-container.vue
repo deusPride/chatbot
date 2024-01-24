@@ -7,7 +7,7 @@
   <div class="Chat" v-show="chatVisibility">
     <div class="chat-header">
       <h3>{{ title }}</h3>
-      <div class="close" @click="toggleVisibility">X</div>
+      <div class="close" @click="toggleVisibility"> </div>
     </div>
     <div class="chat-container">
       <ChatMessage
