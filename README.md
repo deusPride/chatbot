@@ -28,3 +28,6 @@ npm run lint
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Testing the CDN link
+
+An 'index_test.html' file is in the project root for a quick view.
