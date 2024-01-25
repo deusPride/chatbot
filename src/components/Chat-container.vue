@@ -1,13 +1,11 @@
 <template>
-  <div
-    class="floating-Chat"
-    v-show="!chatVisibility"
-    @click="toggleVisibility"
-  ></div>
+  <div class="floating-Chat" v-show="!chatVisibility" @click="toggleVisibility">
+    ^
+  </div>
   <div class="Chat" v-show="chatVisibility">
     <div class="chat-header">
       <h3>{{ title }}</h3>
-      <div class="close" @click="toggleVisibility"> </div>
+      <div class="close" @click="toggleVisibility">v</div>
     </div>
     <div class="chat-container">
       <ChatMessage
@@ -73,7 +71,7 @@ export default {
   transition: 0.5s all;
 }
 .chat-container {
-  overflow-y: scroll;
+  overflow-y:scroll;
 }
 .Chat {
   height: 500px;
