@@ -30,4 +30,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Testing the CDN link
 
-An 'index_test.html' file is in the project root for a quick view.
+Insert the tag below in your html header tag in order to add the chat interface on your page.
+
+```
+<script src="https://cdn.jsdelivr.net/gh/deusPride/chatbot/dist/main.js" defer></script>
+```
